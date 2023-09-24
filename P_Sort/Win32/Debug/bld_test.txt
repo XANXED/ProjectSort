@@ -1,0 +1,5 @@
+Genm 2000 0 1000 1
+Build_tree_u
+Genm 2000 0 1000 1
+Build_tree_d
+Exit

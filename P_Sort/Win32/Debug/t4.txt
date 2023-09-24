@@ -1,0 +1,14 @@
+Create_t pl_heap
+Repeat
+Use_str
+Shell_t
+Add_t r
+Shell_t
+Add_t u
+Use_str
+Ins0_d
+Shell_t
+Add_t d
+Until 10
+End_t res_Shell_tttt4134214
+Exit

@@ -1,0 +1,15 @@
+Create_t pl_heap
+Repeat
+Use_str
+Heap2
+Add_t r
+Heap2
+Add_t u
+Use_str
+Ins0_d
+Heap2
+Add_t d
+Until 10
+Out_t
+End_t res_heap2_2
+Exit

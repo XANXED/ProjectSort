@@ -1,0 +1,5 @@
+Genm 100 0 999 1
+Out63 0
+Ins0_d
+Out63 0
+Exit

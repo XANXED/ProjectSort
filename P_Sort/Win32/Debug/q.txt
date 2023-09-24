@@ -1,0 +1,3 @@
+Genm 63 0 100 1
+Build_tree
+Exit

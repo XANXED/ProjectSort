@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{8A4FD33A-2DF0-47A2-92FC-46E3E9D7295D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="C:\Users\egork\Documents\Embarcadero\Studio\Projects\Project1.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="P_sort.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Project1">
+        <MSBuild Projects="C:\Users\egork\Documents\Embarcadero\Studio\Projects\Project1.dproj"/>
+    </Target>
+    <Target Name="Project1:Clean">
+        <MSBuild Projects="C:\Users\egork\Documents\Embarcadero\Studio\Projects\Project1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project1:Make">
+        <MSBuild Projects="C:\Users\egork\Documents\Embarcadero\Studio\Projects\Project1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="P_sort">
+        <MSBuild Projects="P_sort.dproj"/>
+    </Target>
+    <Target Name="P_sort:Clean">
+        <MSBuild Projects="P_sort.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P_sort:Make">
+        <MSBuild Projects="P_sort.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Project1;P_sort"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Project1:Clean;P_sort:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Project1:Make;P_sort:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

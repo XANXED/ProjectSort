@@ -1,0 +1,6 @@
+Genm 100 -50 30 1
+Counting_u
+Outm 2 2 2
+Counting_d
+Outm 2 2 2
+Exit
